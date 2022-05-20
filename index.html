@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <script src="./scripts/scripts.js"></script>
+</head>
+<body>
+  <div class="main-section">
+    <div class="nav-bar">
+      <div class="nav-bar-left">
+        <div class="nav-brand">
+          <img src="./images/logo.svg" alt="">
+        </div>
+        <div class="nav-links">
+          <img src="./images/icon-close-menu.svg" class="cancel" alt="">
+          <ul class="nav-items">
+            <li class="nav-item popup-btn features">
+              <h3>Features</h3>
+              <img src="./images/icon-arrow-down.svg"  alt="">
+            </li>
+            <li class="nav-item popup-btn company">
+              <h3>Company</h3>
+              <img src="./images/icon-arrow-down.svg" alt="">
+            </li>
+            <li class="nav-item">
+              <a href="#">Careers</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">About</a>
+            </li>
+          </ul>
+          <div class="nav-actions">
+            <div class="nav-actions-link">
+              <a href="#">Login</a>
+            </div>
+            <div class="nav-actions-btn">
+              <button class="btn">Register</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /end nav-bar-left -->
+      <div class="nav-bar-right">
+        <div class="nav-actions">
+          <div class="nav-actions-link">
+            <a href="#">Login</a>
+          </div>
+          <div class="nav-actions-btn">
+            <button class="btn">Register</button>
+          </div>
+        </div>
+        <div class="nav-menu">
+          <img src="./images/icon-menu.svg" alt="">
+        </div>
+      </div>
+      <!-- /end nab-bar-right -->
+    </div>
+    <!-- /end nav-bar -->
+    <div class="main-section-wrapper">
+      <div class="features-popup">
+        <ul class="features-popup-items">
+          <li class="features-popup-item">
+            <a href="#">
+              <img src="./images/icon-todo.svg" alt="">
+              <h3>Todo List</h3>
+            </a>
+          </li>
+          <li class="features-popup-item">
+            <a href="#">
+              <img src="./images/icon-calendar.svg" alt="">
+              <h3>Calendar</h3>
+            </a>
+          </li>
+          <li class="features-popup-item">
+            <a href="#">
+              <img src="./images/icon-reminders.svg" alt="">
+              <h3>Reminders</h3>
+            </a>
+          </li>
+          <li class="features-popup-item">
+            <a href="#">
+              <img src="./images/icon-planning.svg" alt="">
+              <h3>Planning</h3>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- /end features-popup  -->
+      <div class="company-popup">
+        <ul class="company-popup-items">
+          <li class="company-popup-item">
+            <a href="#">
+              <h3>History</h3>
+            </a>
+          </li>
+          <li class="company-popup-item">
+            <a href="#">
+              <h3>Our Team</h3>
+            </a>
+          </li>
+          <li class="company-popup-item">
+            <a href="#">
+              <h3>Blog</h3>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- /end compaany-popup -->
+      <!-- hero-image -->
+      <div class="hero-img">
+        <img class="hero-img-mobile" src="./images/image-hero-mobile.png" alt="">
+        <img class="hero-img-desktop" src="./images/image-hero-mobile.png" alt="">
+      </div>
+      <!-- /end hero-image -->
+      <!-- section-card -->
+      <div class="card">
+        <div class="card-title">
+          <h1>Make remote work</h1>
+        </div>
+        <div class="card-body">
+          <p>
+            Get your team in sync, no matter your location. Streamline processes, 
+  create team rituals, and watch productivity soar.
+          </p>
+        </div>
+        <div class="card-footer">
+          <button class="btn">Learn more</button>
+        </div>
+      </div>
+      <!-- /end section-card -->
+    </div>
+    <!-- /end main-section -->
+    <div class="section-footer">
+      <!-- section-footer-links -->
+      <ul class="section-footer-links">
+        <li class="section-footer-link">
+          <a href="#">
+            <img src="./images/client-databiz.svg" alt="">
+          </a>
+        </li>
+        <li class="section-footer-link">
+          <a href="#">
+            <img src="./images/client-audiophile.svg" alt="">
+          </a>
+        </li>
+        <li class="section-footer-link">
+          <a href="#">
+            <img src="./images/client-meet.svg" alt="">
+          </a>
+        </li>
+        <li class="section-footer-link">
+          <a href="#">
+            <img src="./images/client-maker.svg" alt="">
+          </a>
+        </li>
+      </ul>
+      <!-- /end section-footer-links -->
+    </div>
+    <!-- /end section footer -->
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">swahili geeker</a>.
+  </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+
+$colors: (
+    'primary-clr': hsl(0, 0%, 8%),
+    'secondary-clr': hsl(0, 0%, 98%),
+    'grey-clr': hsl(0, 0%, 41%)
+);
+
+$breakpoints: (
+    'xsm-screen': 320px,
+    'sm-screen': 480px,
+    'md-screen': 768px,
+    'lg-screen': 1025px
+);
+
+$font-weights: (
+    'small': 500,
+    'large': 700
+);
+
+$sizes: (
+    'xsm': 0.5rem,
+    'sm': 1rem,
+    'md': 1.5rem,
+    'lg': 2rem,
+    'xlg': 2.5rem
+);
+
+@mixin apply-to($ltgt, $screen) {
+    @if $ltgt == less-than {
+        @media screen and (max-width: map-get($breakpoints, $screen)) {
+            @content;
+        }
+    }
+    @else if $ltgt == greeter-than {
+        @media screen and (min-width: map-get($breakpoints, $screen)) {
+            @content;
+        }
+    }
+}
